@@ -1,0 +1,34 @@
+body {
+	background: black;
+	text-align: center;
+}
+
+#logo{
+	width:640px;
+	height: 204px;
+	margin-top: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url('../imgs/capathon-coming-soon.png');
+	background-repeat: no-repeat;
+
+}
+
+h1 {
+	color: black;
+}
+
+ul.links {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.links li a {
+	color: #d75A20;
+	text-decoration: none;
+}
+
+ul.links li a:hover {
+	color: #A41920;
+}
