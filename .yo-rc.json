@@ -1,0 +1,6 @@
+{
+  "generator-ngbp": {
+    "projectName": "capathon",
+    "useCoffeescript": false
+  }
+}
