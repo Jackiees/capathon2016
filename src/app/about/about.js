@@ -6,7 +6,7 @@
             views: {
                 "main": {
                     controller: 'AboutController',
-                    templateUrl: 'about/about.tpl.html'
+                    templateUrl: 'home/home.tpl.html'
                 }
             },
             data:{ pageTitle: 'About' }

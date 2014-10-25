@@ -24,12 +24,21 @@
  * Typography
  */
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
+
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+
+
+
+/**
+ * Generic
+ */
+body {
+  background: @backgroundColor;
+  font: 200% @sansFontFamily;
+  color: @textColor;
 }
+
+
 
 
 /**
