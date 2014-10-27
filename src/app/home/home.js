@@ -17,7 +17,7 @@ app.config(function ($stateProvider) {
         url: '/home',
         views: {
             "main": {
-                controller: 'MainCtrl',
+                controller: 'HomeCtrl as home',
                 templateUrl: 'home/home.tpl.html'
             }
         },
@@ -27,12 +27,12 @@ app.config(function ($stateProvider) {
 
 // As you add controllers to a module and they grow in size, feel free to place them in their own files.
 //  Let each module grow organically, adding appropriate organization and sub-folders as needed.
-app.controller('MainCtrl', function () {
+app.controller('HomeCtrl', function () {
 
-    var main = this;
+    var home = this;
 
-    main.signUp = function () {
-        alert('Congratulations');
+    home.signUp = function () {
+        alert('Good choice!');
     };
 
 });
