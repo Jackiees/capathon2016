@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="capathon" ng-controller="AppController as app">
+<html ng-app="capathon" ng-controller="AppController">
 <head>
     <title ng-bind="pageTitle"></title>
 
@@ -14,18 +14,15 @@
 </head>
 <body>
 
-    <header class="big" ng-class="{'big': isAtTheTop }">
+
+    <header ng-class="{'big': isAtTheTop }">
         <nav class="container navbar navbar-inverse navbar-static-top">
 
             <div class="capathon-logo">
                 <img src="assets/images/Capathon.Logo.GOT.White.png" />
+                <br/>
                 <img src="assets/images/All.Men.Must.Hack.White.png" />
             </div>
-
-
-            <input type="text" ng-model="chicken" />
-            <p>{{ chicken }}</p>
-
 
             <ul class="nav navbar-nav">
                 <li ui-sref-active="active">
