@@ -33,7 +33,7 @@
 <p>Of course, the composition of your team can be changed later… However, the organization wants to know about how many people will be participating.</p>
 <p>You have to sign up via this website before the 14th of December.</p>
 <p>After the teams have been submitted, the team leader will be invited to participate in a ‘grooming session’. During this session, the team leader (and possibly other team members as well) tell about their plans and, together with the capathon organization, will come up with a final plan to build during the Capathon. This plan will also be shared with the other teams on this website.</p>
-<button class="btn btn-primary" ng-click="home.signUp()">Click here to sign up</button>
+<button class="btn btn-primary" ng-click="signUp()">Click here to sign up</button>
 
 
 <h1>Rules</h1>
@@ -51,3 +51,16 @@
 <p>We highly encourage you to bring guests to the event. We use the Capathon to promote Capgemini outside of our organization, so do not shun to invite your colleagues from Capgemini or your previous work, your manager, your co-workers at your client site, your wife and kids, your grandfather, your mistress, your two yorkshire terriers, everybody!</p>
 <p>Your guests can actually win bonus-points for your team… so make sure you invite lots. Just make sure you register guests beforehand with the Capathon organization by sending an email to info@c</div>apathon.nl</p>
 
+
+<script type="text/ng-template" id="signup">
+    <div class="modal-header">
+        <h3 class="modal-title">Sign up for the Capathon 2015</h3>
+    </div>
+    <div class="modal-body">
+        sign up form
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">Send</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</script>

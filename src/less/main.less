@@ -51,13 +51,16 @@ body {
 
   .capathon-logo {
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+//    margin-top: 100px;
+//    margin-bottom: 100px;
     opacity: 0;
-    -webkit-transition: max-height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-    transition: max-height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-    max-height: 0;
-    background-image: 
+    height: 0;
+    width: 100%;
+    -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+    transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+    background-image: url("/assets/images/Capathon.Site.Header.png");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
 }
@@ -66,7 +69,7 @@ header.big  {
   nav {
     .capathon-logo {
       opacity: 1;
-      max-height: 300px;
+      height: 300px;
     }
   }
 

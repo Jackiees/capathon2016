@@ -31,8 +31,6 @@ app.controller('HomeCtrl', function () {
 
     var home = this;
 
-    home.signUp = function () {
-        alert('Good choice!');
-    };
+
 
 });
