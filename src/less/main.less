@@ -64,6 +64,17 @@ header {
       background-repeat: no-repeat;
     }
 
+    .timer {
+      text-align: center;
+      font-size: 125%;
+      margin-bottom: 0;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+      transition: height 0.42s ease 0.5s, margin-bottom 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+    }
+
     .capathon-logo-small {
       opacity: 1;
       height: 30px;
@@ -76,6 +87,7 @@ header {
       -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
       transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
     }
+
   }
 
   &.big  {
@@ -91,6 +103,12 @@ header {
         -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
         transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
       }
+
+     .timer {
+       opacity: 1;
+       height: 3em;
+       margin-bottom: 50px;
+     }
     }
   }
 }

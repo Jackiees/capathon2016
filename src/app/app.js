@@ -5,7 +5,8 @@ var capathon = angular.module("capathon", [
     'ui.router.state',
     'ui.router',
     'ui.bootstrap',
-    'ui.bootstrap.tpls'
+    'ui.bootstrap.tpls',
+    'timer'
 ]);
 
 capathon.config(function ($stateProvider, $urlRouterProvider) {

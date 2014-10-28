@@ -18,10 +18,11 @@
     <header ng-class="{'big': isAtTheTop }">
         <nav class="container navbar navbar-inverse navbar-static-top">
 
-            <div class="capathon-logo">
-                <!--<img src="assets/images/Capathon.Logo.GOT.White.png" />-->
-                <!--<br/>-->
-                <!--<img src="assets/images/All.Men.Must.Hack.White.png" />-->
+            <div class="capathon-logo"></div>
+            <div class="timer">
+                <span>Countdown until Capathon 2015...</span>
+                <br />
+                <timer end-time="1423159200000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
             </div>
 
             <ul class="nav navbar-nav">
