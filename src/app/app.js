@@ -1,11 +1,11 @@
 var capathon = angular.module("capathon", [
     'capathon.home',
-    'capathon.about',
     'templates-app',
     'templates-common',
     'ui.router.state',
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ui.bootstrap.tpls'
 ]);
 
 capathon.config(function ($stateProvider, $urlRouterProvider) {
@@ -36,16 +36,31 @@ capathon.controller('AppController', function ($scope, $window, $modal) {
 
 
     // signup
-    $scope.signUp = function () {
+    $scope.signUp = function (size) {
         var modalInstance = $modal.open({
-            templateUrl: 'signup',
-            controller: 'signupCtrl'
+//            templateUrl: 'signup',
+            templateUrl: 'signup/signup.tpl.html',
+            controller: 'signupCtrl',
+            site: size
+
         });
     };
 
 
 });
 
-capathon.controller("signupCtrl", function($scope) {
+capathon.controller("signupCtrl", function($scope, $modalInstance) {
+
+  $scope.ok = function() {
+    alert("TODO sumbit form");
+
+  };
+
+  $scope.cancel = function() {
+    $modalInstance.dismiss('cancel');
+  };
+
+
+
 
 });

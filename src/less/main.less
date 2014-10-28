@@ -39,41 +39,68 @@ body {
 }
 
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0.9;
-
-  &.navbar-inverse {
-    background: #222;
-  }
-
-  .capathon-logo {
-    text-align: center;
-//    margin-top: 100px;
-//    margin-bottom: 100px;
-    opacity: 0;
-    height: 0;
+header {
+  .navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-    transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-    background-image: url("/assets/images/Capathon.Site.Header.png");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    opacity: 0.9;
 
-}
+    &.navbar-inverse {
+      background: #222;
+    }
 
-header.big  {
-  nav {
     .capathon-logo {
+      text-align: center;
+      //    margin-top: 100px;
+      //    margin-bottom: 100px;
+      opacity: 0;
+      height: 0;
+      width: 100%;
+      -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+      transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+      background-image: url("/assets/images/Capathon.Site.Header.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .capathon-logo-small {
       opacity: 1;
-      height: 300px;
+      height: 30px;
+      width: 155px;
+      background-image: url("/assets/images/capathon-small.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      float: right;
+      margin-top: 10px;
+      -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+      transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
     }
   }
 
+  &.big  {
+    nav {
+      .capathon-logo {
+        opacity: 1;
+        height: 300px;
+      }
 
+      .capathon-logo-small {
+        opacity: 0;
+        width: 0;
+        -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+        transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+      }
+    }
+  }
+}
+
+
+
+/* Signup */
+.modal-content {
+  background: #d4d4d4;
+  color: #000;
 }
 
 
