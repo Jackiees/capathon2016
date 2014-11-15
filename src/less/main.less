@@ -39,81 +39,106 @@ body {
 }
 
 
+
+// header
+
 header {
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0.9;
 
-    &.navbar-inverse {
-      background: #222;
-    }
 
-    .capathon-logo {
-      text-align: center;
-      //    margin-top: 100px;
-      //    margin-bottom: 100px;
-      opacity: 0;
-      height: 0;
-      width: 100%;
-      -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-      transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-      background-image: url("/assets/images/Capathon.Site.Header.png");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .timer {
-      text-align: center;
-      font-size: 125%;
-      margin-bottom: 0;
-      opacity: 0;
-      height: 0;
-      overflow: hidden;
-      -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-      transition: height 0.42s ease 0.5s, margin-bottom 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-    }
-
-    .capathon-logo-small {
-      opacity: 1;
-      height: 30px;
-      width: 155px;
-      background-image: url("/assets/images/capathon-small.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      float: right;
-      margin-top: 10px;
-      -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-      transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
-    }
-
+  // all screen
+  .timer {
+    margin-bottom: 0;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
   }
 
-  &.big  {
-    nav {
+
+  // only for larger screens
+  @media (min-width: @screen-sm) {
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      opacity: 0.9;
+
+      &.navbar-inverse {
+        background: #222;
+      }
+
       .capathon-logo {
-        opacity: 1;
-        height: 300px;
+        text-align: center;
+        //    margin-top: 100px;
+        //    margin-bottom: 100px;
+        opacity: 0;
+        height: 0;
+        width: 100%;
+        -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+        transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+        background-image: url("/assets/images/Capathon.Site.Header.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .timer {
+        display: block;
+        text-align: center;
+        font-size: 125%;
+        -webkit-transition: height 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+        transition: height 0.42s ease 0.5s, margin-bottom 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
       }
 
       .capathon-logo-small {
-        opacity: 0;
-        width: 0;
+        opacity: 1;
+        height: 30px;
+        width: 155px;
+        background-image: url("/assets/images/capathon-small.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        float: right;
+        margin-top: 10px;
         -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
         transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
       }
 
-     .timer {
-       opacity: 1;
-       height: 3em;
-       margin-bottom: 50px;
-     }
+    }
+
+    &.big {
+      nav {
+        .capathon-logo {
+          opacity: 1;
+          height: 300px;
+        }
+
+        .capathon-logo-small {
+          opacity: 0;
+          width: 0;
+          -webkit-transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+          transition: width 0.42s ease 0.5s, opacity 0.4s ease 0.375s;
+        }
+
+        .timer {
+          opacity: 1;
+          height: 3em;
+          margin-bottom: 50px;
+        }
+      }
     }
   }
 }
 
 
+// footer
+footer.container {
+  width: 100%!important;
+  margin: 0;
+  height: 5em;
+  margin-top: 100px;
+  padding-top:2em;
+  padding-bommom: 2em;
+  background-color: rgb(30, 30, 30);
+}
 
 /* Signup */
 .modal-content {
