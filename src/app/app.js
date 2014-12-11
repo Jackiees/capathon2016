@@ -15,7 +15,7 @@ capathon.config(function ($stateProvider, $urlRouterProvider) {
 
 capathon.run(function () {});
 
-capathon.controller('AppController', function ($scope, $window, $modal) {
+capathon.controller('AppController', function ($scope, $window) {
 
     $scope.isAtTheTop = true;
 
@@ -36,32 +36,10 @@ capathon.controller('AppController', function ($scope, $window, $modal) {
     });
 
 
-    // signup
-    $scope.signUp = function (size) {
-        var modalInstance = $modal.open({
-//            templateUrl: 'signup',
-            templateUrl: 'signup/signup.tpl.html',
-            controller: 'signupCtrl',
-            site: size
-
-        });
-    };
-
-
-});
-
-capathon.controller("signupCtrl", function($scope, $modalInstance) {
-
-  $scope.ok = function() {
-    alert("TODO sumbit form");
-
+  // signup
+  $scope.signUp = function() {
+    $window.open('http://builders.capgemini.com/event/takeevent?content_id=775FEA43-C7CD-29F3-25B6-359F069AC291');
   };
-
-  $scope.cancel = function() {
-    $modalInstance.dismiss('cancel');
-  };
-
-
 
 
 });
