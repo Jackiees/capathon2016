@@ -20,7 +20,13 @@
         <nav class="container navbar navbar-inverse navbar-static-top">
 
             <div class="capathon-logo"></div>
+
+            <!-- this will not show when angular has loaded -->
+            <div class="warning" ng-cloak ng-hide="true">Hi there, this site is built using modern web techniques. If you see this message, that means you are using an unsupported browser. Please visit our site using a <a href="http://browsehappy.com/" target="_blank">modern browser</a>.</div>
+            
             <div class="timer">
+                <span>19-21 of February, 2015 | Haj&eacute; Hotel Heerenveen</span>
+                <br /> <br />
                 <span>Countdown until Capathon 2015...</span>
                 <br />
                 <timer end-time="1424368800000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
