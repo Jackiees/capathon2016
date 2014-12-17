@@ -76,6 +76,7 @@ module.exports = function(grunt) {
          */
         vendor_files: {
             js: [
+                'vendor/jquery/dist/jquery.min.js',
                 'vendor/angular/angular.js',
                 'vendor/angular-resource/angular-resource.js',
                 'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
