@@ -20,8 +20,9 @@ capathon.controller('AppController', function ($scope, $window) {
     $scope.isAtTheTop = true;
 
     var initPagePosition = function() {
+
         $scope.$apply(function () {
-            if(document.body.scrollTop < 20) {
+            if($(document).scrollTop() < 20) {
                 $scope.isAtTheTop = true;
             }
             else {
