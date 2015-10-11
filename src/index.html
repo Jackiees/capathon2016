@@ -2,7 +2,7 @@
 <html ng-app="capathon" ng-controller="AppController">
 <head>
     <meta charset="UTF-8">
-    <title>Capathon 2015 - Everybody Must Hack!</title>
+    <title>Capathon 2016 - Everybody Must Hack!</title>
 
     <!-- font awesome from BootstrapCDN -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -25,16 +25,17 @@
             <div class="warning" ng-cloak ng-hide="true">Hi there, this site is built using modern web techniques. If you see this message, that means you are using an unsupported browser. Please visit our site using a <a href="http://browsehappy.com/" target="_blank">modern browser</a>.</div>
             
             <div class="timer">
-                <span>19-21 of February, 2015 | Haj&eacute; Hotel Heerenveen</span>
+                <span>4-6 of February, 2016 | Haj&eacute; Hotel Heerenveen</span>
                 <br /> <br />
-                <span>Countdown until Capathon 2015...</span>
+                <span>Countdown until Capathon 2016...</span>
                 <br />
+                <!-- <timer end-time="1424368800000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer> -->
                 <timer end-time="1424368800000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
             </div>
 
             <ul class="nav navbar-nav">
                 <li ui-sref-active="active">
-                    <a ui-sref="home">Capathon 2015</a>
+                    <a ui-sref="home">Capathon 2016</a>
                 </li>
                 <li ui-sref-active="active">
                     <a ng-click="signUp()">Sign Up! (requires Capgemini login)</a>
