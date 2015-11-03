@@ -39,8 +39,7 @@ capathon.controller('AppController', function ($scope, $window) {
 
   // signup
   $scope.signUp = function() {
-    $window.open('http://builders.capgemini.com/event/takeevent?content_id=775FEA43-C7CD-29F3-25B6-359F069AC291');
+    $window.open('http://builders.capgemini.com/event/takeevent?content_id=0FDA6D76-FED8-3088-CEF0-D0D3ADE58A37');
   };
-
 
 });
