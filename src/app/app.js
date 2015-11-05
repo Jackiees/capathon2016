@@ -17,24 +17,24 @@ capathon.run(function () {});
 
 capathon.controller('AppController', function ($scope, $window) {
 
-    $scope.isAtTheTop = true;
+    // $scope.isAtTheTop = true;
 
-    var initPagePosition = function() {
+    // var initPagePosition = function() {
 
-        $scope.$apply(function () {
-            if($(document).scrollTop() < 20) {
-                $scope.isAtTheTop = true;
-            }
-            else {
-                $scope.isAtTheTop = false;
-            }
-        });
-    };
+    //     $scope.$apply(function () {
+    //         if($(document).scrollTop() < 20) {
+    //             $scope.isAtTheTop = true;
+    //         }
+    //         else {
+    //             $scope.isAtTheTop = false;
+    //         }
+    //     });
+    // };
 
     // set scroll binding
-    angular.element($window).bind("scroll", function() {
-        initPagePosition();
-    });
+    // angular.element($window).bind("scroll", function() {
+    //     initPagePosition();
+    // });
 
 
   // signup
