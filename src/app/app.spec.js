@@ -2,7 +2,7 @@ describe('AppController', function () {
     describe('isCurrentUrl', function () {
         var AppCtrl, $location, $scope;
 
-        beforeEach(module('capathon'));
+        beforeEach(module('hackathon'));
 
         beforeEach(inject(function ($controller, _$location_, $rootScope) {
             $location = _$location_;

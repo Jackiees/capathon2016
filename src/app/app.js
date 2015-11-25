@@ -1,5 +1,5 @@
-var capathon = angular.module("capathon", [
-    'capathon.home',
+var hackathon = angular.module("hackathon", [
+    'hackathon.home',
     'templates-app',
     'templates-common',
     'ui.router.state',
@@ -9,13 +9,13 @@ var capathon = angular.module("capathon", [
     'timer'
 ]);
 
-capathon.config(function ($stateProvider, $urlRouterProvider) {
+hackathon.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
 });
 
-capathon.run(function () {});
+hackathon.run(function () {});
 
-capathon.controller('AppController', function ($scope, $window) {
+hackathon.controller('AppController', function ($scope, $window) {
 
     // $scope.isAtTheTop = true;
 

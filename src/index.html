@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html ng-app="capathon" ng-controller="AppController">
+<html ng-app="hackathon" ng-controller="AppController">
 <head>
     <meta charset="UTF-8">
-    <title>Capathon 2016 - Artificial Intelligence!</title>
+    <title>Hackathon Weekend 2016 - Artificial Intelligence!</title>
 
     <!-- font awesome from BootstrapCDN -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -14,57 +14,21 @@
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
 </head>
 <body>
-
-
-  <!--  <header ng-class="{'big': isAtTheTop }">
-        <nav class="container navbar navbar-inverse navbar-static-top">
-
-            <div class="capathon-logo"></div>
-
-            <div class="warning" ng-cloak ng-hide="true">Hi there, this site is built using modern web techniques. If you see this message, that means you are using an unsupported browser. Please visit our site using a <a href="http://browsehappy.com/" target="_blank">modern browser</a>.</div>
-            
-            <div class="timer">
-                <span>4-6 of February, 2016 | Haj&eacute; Hotel Heerenveen</span>
-                <br /> <br />
-                <span>Countdown until Capathon 2016...</span>
-                <br />
-                <timer end-time="1454605201000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
-            </div>
-
-            <ul class="nav navbar-nav">
-                <li ui-sref-active="active">
-                    <a ui-sref="home">Capathon 2016</a>
-                </li>
-                <li ui-sref-active="active">
-                    <a ng-click="signUp()">Sign Up! (requires Capgemini login)</a>
-                </li>
-
-
-            </ul>
-
-            <div class="capathon-logo-small"></div>
-
-        </nav>
-    </header>-->
-
     <header></header>
 
     <div class="container" ui-view="main"></div>
-
-
-
 
     <footer class="container">
     </footer>
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-55862276-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-55862276-1', 'auto');
+    ga('send', 'pageview');
 
     </script>
 

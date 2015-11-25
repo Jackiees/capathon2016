@@ -10,7 +10,7 @@
  * will automatically take take of the rest.
  */
 
-var app = angular.module("capathon.home", ['ui.router']);
+var app = angular.module("hackathon.home", ['ui.router']);
 
 app.config(function ($stateProvider) {
     $stateProvider.state('home', {
